@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{02AF31D8-1457-44F1-8613-F48312140245}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Zadatak4</RootNamespace>
-    <AssemblyName>Zadatak4</AssemblyName>
+    <ProjectGuid>{41350FDA-2C89-41D9-96D9-392229D1D1F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BussinessLogic</RootNamespace>
+    <AssemblyName>BussinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Enumeratori\VrstaArtikla.cs" />
+    <Compile Include="Enumeratori\VrstaKape.cs" />
+    <Compile Include="Enumeratori\VrstaOdabranogArtikla.cs" />
+    <Compile Include="Interfejsi\IShoping.cs" />
+    <Compile Include="Modeli\Artikal.cs" />
+    <Compile Include="Modeli\Artikli\Cipela.cs" />
+    <Compile Include="Modeli\Artikli\Hlace.cs" />
+    <Compile Include="Modeli\Artikli\Kapa.cs" />
+    <Compile Include="Modeli\Artikli\Majica.cs" />
+    <Compile Include="Modeli\MojaKonzola.cs" />
+    <Compile Include="Modeli\Outfit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="BussinessLogic\BussinessLogic.csproj">
-      <Project>{41350fda-2c89-41d9-96d9-392229d1d1f3}</Project>
-      <Name>BussinessLogic</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
