@@ -57,7 +57,7 @@ namespace Zadatak4
                 MojaKonzola.Boja = ConsoleColor.Magenta;
 
                 MojaKonzola.WriteLine("Odaberi vrstu artkla:");
-                MojaKonzola.WriteLine("1) cipela");
+                MojaKonzola.WriteLine("1) Cipela");
                 MojaKonzola.WriteLine("2) Hlace");
                 MojaKonzola.WriteLine("3) Majica");
                 MojaKonzola.WriteLine("4) Kapa");
